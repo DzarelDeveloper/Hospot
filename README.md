@@ -101,7 +101,7 @@ Edit file `login.css` dan ubah variabel CSS di bagian `:root`:
 }
 ```
 
-### Mengubah Background
+### Mengubah foto
 Ganti file `1.jpeg` dan `2.jpeg` dengan gambar custom Anda
 
 ### Mengubah Logo
