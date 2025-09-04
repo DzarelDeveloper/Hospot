@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Thank You</title>
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style type="text/css">
+        :root {
+            --primary-color: #ffffff;
+            --secondary-color: #333333;
+            --accent-color: #000000;
+            --text-color: #ffffff;
+            --light-text: #999999;
+            --border-radius: 4px;
+            --box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #1a1a1a;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-color);
+            overflow: hidden;
+        }
+        
+        .logout-container {
+            display: flex;
+            width: 90%;
+            max-width: 900px;
+            height: 500px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        /* Left panel with blurred image */
+        .left-panel {
+            flex: 1;
+            background-image: url('1.jpeg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .left-panel::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px);
+        }
+        
+        .logo-text {
+            position: relative;
+            color: white;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            z-index: 1;
+        }
+        
+        /* Right panel with logout info */
+        .right-panel {
+            flex: 1;
+            background-color: #000000;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .logout-content {
+            text-align: center;
+        }
+        
+        .status-icon {
+            font-size: 3rem;
+            color: #4BB543;
+            margin-bottom: 20px;
+        }
+        
+        h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        
+        .divider {
+            width: 40px;
+            height: 3px;
+            background-color: #ffffff;
+            margin: 0 auto 15px;
+        }
+        
+        p {
+            color: var(--light-text);
+            margin-bottom: 25px;
+        }
+        
+        .session-info {
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: var(--border-radius);
+            padding: 20px;
+            margin-bottom: 25px;
+            text-align: left;
+        }
+        
+        .session-info table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .session-info td {
+            padding: 8px 0;
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+        
+        .session-info td:first-child {
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+        
+        button {
+            width: 100%;
+            padding: 14px;
+            background-color: #ffffff;
+            border: none;
+            border-radius: var(--border-radius);
+            color: #000000;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+        }
+        
+        button:hover {
+            background-color: rgba(255, 255, 255, 0.9);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+        }
+        
+        .footer {
+            margin-top: auto;
+            text-align: center;
+            font-size: 0.8rem;
+            color: var(--light-text);
+        }
+        
+        .footer a {
+            color: var(--light-text);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer a:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .logout-container {
+                flex-direction: column;
+                height: auto;
+                max-width: 400px;
+            }
+            
+            .left-panel {
+                display: none; /* Hide the left panel on mobile */
+            }
+            
+            .right-panel {
+                padding: 30px 20px;
+                width: 100%;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<script language="JavaScript">
+<!--
+    function openLogin() {
+        if (window.name != 'hotspot_logout') return true;
+        open('$(link-login)', '_blank', '');
+        window.close();
+        return false;
+    }
+//-->
+</script>
+
+<div class="logout-container">
+    <div class="left-panel">
+        <div class="logo-text">DZAREL</div>
+    </div>
+    
+    <div class="right-panel">
+        <div class="logout-content" style="margin-top: 70px;">
+            <div class="status-icon" style="font-size: 2.5rem; margin-bottom: 20px;">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            
+            <h2 style="font-size: 1.4rem;">SUCCESSFULLY LOGGED OUT</h2>
+            <div class="divider" style="display: none;"></div>
+            <p style="margin-top: 10px; margin-bottom: 20px; font-size: 0.8rem;">Terima kasih telah menggunakan layanan hotspot saya.</p>
+            
+            <div class="session-info" style="margin-bottom: 25px;">
+                <table style="border-spacing: 0 5px; font-size: 0.75rem;">  
+                    <tr><td style="padding-right: 10px;">User Name</td><td>$(username)</td></tr>
+                    <tr><td style="padding-right: 10px;">IP Address</td><td>$(ip)</td></tr>
+                    <tr><td style="padding-right: 10px;">MAC Address</td><td>$(mac)</td></tr>
+                    <tr><td style="padding-right: 10px;">Session Time</td><td>$(uptime)</td></tr>
+                    $(if session-time-left)
+                    <tr><td style="padding-right: 10px;">Time Left</td><td>$(session-time-left)</td></tr>
+                    $(endif)
+                    <tr><td style="padding-right: 10px;">Data Usage</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+                </table>
+            </div>
+            
+            <form action="$(link-login)" name="login" onSubmit="return openLogin()" style="margin-bottom: 15px;">
+                <button type="submit" style="font-size: 0.75rem; padding: 8px 15px;">LOG IN AGAIN</button>
+            </form>
+        </div>
+        
+        <div class="footer" style="margin-top: 20px;">
+            <p style="font-size: 0.75rem;"><a href="https://www.instagram.com/syntaxx.sky" style="color: white; text-decoration: none;">Created By DzarelDeveloper</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
