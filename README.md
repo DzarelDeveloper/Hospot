@@ -24,10 +24,15 @@ Template custom untuk halaman login Mikrotik Hotspot yang modern dan responsif.
 ## ✨ Fitur
 
 ✅ **Desain Modern** - UI yang clean dan profesional
+
 ✅ **Responsif** - Bekerja optimal di desktop dan mobile
+
 ✅ **Dark Theme** - Tema gelap yang eye-friendly
+
 ✅ **Animasi Smooth** - Transisi dan efek halus
+
 ✅ **Font Awesome Icons** - Icon yang konsisten
+
 ✅ **Google Fonts** - Typography yang elegan
 
 ## 🚀 Cara Installasi
