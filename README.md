@@ -2,6 +2,9 @@
 
 Template custom untuk halaman login Mikrotik Hotspot yang modern dan responsif.
 
+# Preview Login
+![](login.png)
+
 ## 📁 Struktur File
 
 - `login.html` - Halaman login utama
