@@ -3,7 +3,7 @@
 Template custom untuk halaman login Mikrotik Hotspot yang modern dan responsif.
 
 # Preview Login
-![](login.png)
+![login screnshoot](img/login.png)
 
 ## 📁 Struktur File
 
